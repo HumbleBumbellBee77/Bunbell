@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes, viewport-fit=cover">
   <title>Menu Soal</title>
   <meta name="robots" content="noindex, nofollow, noarchive">
 
@@ -41,7 +41,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 11px; 
+      font-size: 16px; 
       font-weight: bold;
       color: #000000;
       z-index: 1000;
@@ -49,7 +49,7 @@
     }
 
     .status-time {
-      width: 55px;
+      width: 75px;
       text-align: left;
     }
 
@@ -77,14 +77,14 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      gap: 7px;
-      width: 65px;
+      gap: 6px;
+      width: 75px;
     }
 
     .battery-icon-container {
-      width: 20px; 
-      height: 10px;
-      border: 1px solid #0f0f0f;
+      width: 26px; 
+      height: 13px;
+      border: 1.5px solid #0f0f0f;
       border-radius: 3px;
       position: relative;
       padding: 1px;
@@ -94,10 +94,10 @@
     .battery-icon-container::after {
       content: '';
       position: absolute;
-      right: -3px;
-      top: 2px;
-      width: 2px;
-      height: 4px;
+      right: -4px;
+      top: 3px;
+      width: 3px;
+      height: 5px;
       background: #4a4a4a;
       border-radius: 0 1px 1px 0;
     }
@@ -151,6 +151,7 @@
       overflow: hidden; 
       display: flex;
       flex-direction: column;
+      position: relative;
     }
 
     /* TOP NAVIGATION TABS (diperkecil) */
@@ -272,11 +273,11 @@
       cursor: pointer;
     }
 
-    /* ICON INFO PROJOK KIRI BAWAH */
+    /* ICON INFO PROJOK KIRI BAWAH KOTAK */
     .info-icon {
-      position: fixed;
-      left: 16px;
-      bottom: calc(14px + env(safe-area-inset-bottom));
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
       width: 24px;
       height: 24px;
       border-radius: 50%;
@@ -284,11 +285,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Georgia, 'Times New Roman', serif;
-      font-style: italic;
+      font-family: sans-serif, 'Times New Roman', sans-serif;
+      font-style: sans-serif;
       font-weight: bold;
       font-size: 13px;
-      color: #4a4a4a;
+      color: #000000;
       background: transparent;
       z-index: 500;
       cursor: pointer;
@@ -318,9 +319,6 @@
     <p style="margin-top: 10px; font-size: 14px; color: #cbd5e1;">Anda harus masuk ke mode layar penuh untuk mengakses soal.</p>
     <button onclick="enterFullscreen()">Masuk Layar Penuh</button>
   </div>
-
-  <!-- ICON INFO POJOK KIRI BAWAH -->
-  <div class="info-icon" title="Informasi">i</div>
 
   <!-- BAGIAN ATAS: FAKE STATUS BAR -->
   <div class="status-bar">
@@ -362,7 +360,7 @@
       <!-- HOME -->
       <div id="homeTab" class="tab-content">
         <h2 style="font-weight: bold;">SMA KRISTEN SATYA WACANA</h2>
-        <p style="text-align: center; color: #0a74bb; margin-bottom: 20px;">Leader - Explorer - Archiever - Disciple</p>
+        <p style="text-align: center; color: #0b5fcc; margin-bottom: 20px;">Leader - Explorer - Archiever - Disciple</p>
         <div style="text-align: center;">
           <img src="logo.png" alt="Asesmen Logo" style="max-width: 80%; height: auto; border-radius: 10px;">
         </div>
@@ -403,6 +401,9 @@
     <div id="examFrameContainer">
       <iframe id="examIframe" src="about:blank"></iframe>
     </div>
+
+    <!-- ICON INFO POJOK KIRI BAWAH KOTAK -->
+    <div class="info-icon" title="Informasi">i</div>
 
   </div> <!-- PENUTUP KOTAK MENU -->
 
